@@ -380,6 +380,10 @@
         line-height: 24px;
         padding: 14px 16px;
     }
+    .blogs-section .section-subtitle{
+        font-size:18px;
+        line-height:24px;
+    }
 }
 
 
