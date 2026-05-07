@@ -111,9 +111,7 @@
     });
   });
 
- 
-
-  /* -------- Testimonials slider -------- */
+  // /* -------- Testimonials slider -------- */
   // const testimonials = [
   //   {
   //     text: "I've been to a few places, but this one stands out. Clean, skilled team, and a relaxing experience every time. Easily the best nail salon in Cherry Hill.",
@@ -159,3 +157,35 @@
 
 
   // setInterval(nextTestimonial, 5000);
+
+
+
+     $(function () {
+
+        // Initialize Owl
+        var owl = $(".testimonial-slider");
+
+        owl.owlCarousel({
+          items: 1,
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          smartSpeed: 700,
+          dots: false,
+          nav: false
+        });
+
+        // Custom Next
+        $(".testimonial-next").click(function (e) {
+          e.preventDefault();
+          owl.trigger("next.owl.carousel");
+        });
+
+        // Custom Prev
+        $(".testimonial-prev").click(function (e) {
+          e.preventDefault();
+          owl.trigger("prev.owl.carousel");
+        });
+
+      });
