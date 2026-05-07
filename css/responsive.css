@@ -188,6 +188,11 @@
     .blogs-section {
         padding: 40px 0;
     }
+    .blog-card-title {
+    font-size: 16px;
+    line-height: 130%;
+    min-height: 85px;
+}
 }
 
 
@@ -741,6 +746,29 @@
     .blogs-section {
         padding: 20px 0;
     }
+    .blogs-section .section-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px !important;
+}
+
+.blog-card-img {
+    height: 190px;
+}
+
+.blog-card-body {
+    padding: 16px;
+    padding-top: 24px;
+}
+
+.blog-card-title {
+    font-size: 16px;
+    min-height: 70px;
+}
+
+.blog-date {
+    font-size: 12px;
+}
 }
 
 
@@ -779,6 +807,7 @@
     }
 .blogs-section{
     padding: 0;
+    padding-bottom: 40px;
 }
     .footer-bottom-links {
         justify-content: center;
